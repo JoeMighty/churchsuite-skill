@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChurchSuite Embed JSON example</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; }
+    li { margin: 0 0 1rem; }
+    small { color: #555; }
+  </style>
+</head>
+<body>
+  <h1>Upcoming events</h1>
+  <ul id="events"><li>Loading...</li></ul>
+
+  <script>
+    // Replace with the JSON URL of an Embed Configuration created in ChurchSuite
+    // (Calendar module, settings cogwheel, Embed tab). Check the exact URL and the
+    // response shape in the preview and at https://developer.churchsuite.com.
+    const FEED_URL = "https://YOURACCOUNT.churchsuite.com/-/calendar/YOUR-EMBED-CONFIG-UUID/json";
+
+    function esc(s) {
+      const d = document.createElement("div");
+      d.textContent = s == null ? "" : String(s);
+      return d.innerHTML;
+    }
+
+    fetch(FEED_URL)
+      .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .then(data => {
+        const list = Array.isArray(data) ? data : (data.events || data.data || []);
+        const ul = document.getElementById("events");
+        ul.innerHTML = list.length ? "" : "<li>No upcoming events.</li>";
+        list.forEach(ev => {
+          const li = document.createElement("li");
+          li.innerHTML = "<strong>" + esc(ev.name || ev.title) + "</strong><br><small>" +
+            esc(ev.datetime_start || ev.start || "") + "</small>";
+          ul.appendChild(li);
+        });
+      })
+      .catch(err => {
+        document.getElementById("events").innerHTML = "<li>Could not load events: " + esc(err.message) + "</li>";
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+{
+  "skill": "churchsuite",
+  "cases": [
+    {
+      "prompt": "A contact I added to a flow is not appearing. Why?",
+      "expect": [
+        "Active vs Pending or Archived",
+        "only Active contacts are processed"
+      ]
+    },
+    {
+      "prompt": "Can I get rota assignments for next Sunday from the ChurchSuite API?",
+      "expect": [
+        "v2 has rota ministries, members and unavailability but not individual slot assignments",
+        "suggest iCal feed, CSV export or Planning workaround"
+      ]
+    },
+    {
+      "prompt": "Difference between rota unavailability and decline?",
+      "expect": [
+        "unavailability clashes across all rotas for the dates",
+        "decline clashes only one rota date"
+      ]
+    },
+    {
+      "prompt": "How do I stop a Gift Aid declaration made through Donate being fund specific?",
+      "expect": [
+        "Donate cannot create All funds declarations",
+        "add an All funds declaration in the Giving module"
+      ]
+    },
+    {
+      "prompt": "We still use Connect for child check-in. Anything we should know?",
+      "expect": [
+        "Connect child check-in retired 31 May 2026",
+        "use the Check-In app",
+        "same sessions and groups carry over"
+      ]
+    },
+    {
+      "prompt": "Write Python to list active contacts.",
+      "expect": [
+        "API v2 client credentials",
+        "secrets from environment variables",
+        "paginate with per_page",
+        "send Accept: application/json",
+        "suggest checking developer.churchsuite.com for current endpoints"
+      ]
+    },
+    {
+      "prompt": "A member asked to be forgotten. What happens in ChurchSuite?",
+      "expect": [
+        "nothing auto deleted",
+        "notification to data protection contact",
+        "Right to be Forgotten key date",
+        "church decides process and other lawful bases"
+      ]
+    },
+    {
+      "prompt": "Our v1 API integration still works, should I worry?",
+      "expect": [
+        "v1 deprecated",
+        "turned off 1 August 2027",
+        "migrate to v2"
+      ]
+    },
+    {
+      "prompt": "What is the ChurchSuite share price?",
+      "expect": [
+        "does not invent",
+        "out of scope or unknown"
+      ]
+    },
+    {
+      "prompt": "I'm brand new to ChurchSuite. Where do I start?",
+      "expect": [
+        "asks role and modules",
+        "plain English",
+        "points to 30 day plan",
+        "week 1 foundations"
+      ]
+    },
+    {
+      "prompt": "How do I add a new person?",
+      "expect": [
+        "Address Book add contact",
+        "set status Active",
+        "numbered steps"
+      ]
+    },
+    {
+      "prompt": "What does smart tag mean?",
+      "expect": [
+        "tag that follows rules and updates itself",
+        "contrast with fixed tag"
+      ]
+    },
+    {
+      "prompt": "What is the difference between Pending and Archived?",
+      "expect": [
+        "Pending new unconfirmed",
+        "Archived kept but ignored",
+        "only Active processed"
+      ]
+    },
+    {
+      "prompt": "I want to import 300 people from Excel.",
+      "expect": [
+        "use template",
+        "header in row 1 no duplicate headers",
+        "test small batch",
+        "export first",
+        "children not linked to parents"
+      ]
+    },
+    {
+      "prompt": "Our giving import shows a yellow triangle.",
+      "expect": [
+        "column label not recognised",
+        "check headers against template"
+      ]
+    },
+    {
+      "prompt": "Help me set up Sunday check-in.",
+      "expect": [
+        "Check-In app not Connect",
+        "Print test",
+        "checklist",
+        "safeguarding lead"
+      ]
+    },
+    {
+      "prompt": "A child is not showing at check-in.",
+      "expect": [
+        "group member list",
+        "age group",
+        "QR requires My ChurchSuite access"
+      ]
+    },
+    {
+      "prompt": "How do I email everyone in a small group?",
+      "expect": [
+        "bulk actions menu",
+        "Send email",
+        "preview before sending"
+      ]
+    },
+    {
+      "prompt": "My ::my_link:: merge field is blank in a newsletter.",
+      "expect": [
+        "only works in invitation emails"
+      ]
+    },
+    {
+      "prompt": "Someone wants to leave a rota for a month.",
+      "expect": [
+        "unavailability across all rotas",
+        "add early",
+        "swap for coming Sunday"
+      ]
+    },
+    {
+      "prompt": "How do I give a volunteer access to only the children's module?",
+      "expect": [
+        "User permission Use or Write on Children",
+        "site access",
+        "least privilege"
+      ]
+    },
+    {
+      "prompt": "What permissions should a treasurer have?",
+      "expect": [
+        "Giving Manage",
+        "none elsewhere unless needed",
+        "review every 6 months"
+      ]
+    },
+    {
+      "prompt": "How do I delete a person who has left?",
+      "expect": [
+        "archive vs delete",
+        "delete permanent",
+        "check lawful basis",
+        "export first"
+      ]
+    },
+    {
+      "prompt": "Merge duplicates safely.",
+      "expect": [
+        "merge duplicate contacts tool",
+        "permanent",
+        "check person detection settings"
+      ]
+    },
+    {
+      "prompt": "How do I show our events on our website?",
+      "expect": [
+        "Embed configuration",
+        "Show in embed",
+        "no personal data in JSON feeds"
+      ]
+    },
+    {
+      "prompt": "Can I get giving data through the API?",
+      "expect": [
+        "giving/donations and givers endpoints",
+        "client credentials",
+        "read scope only",
+        "personal and financial data caution"
+      ]
+    },
+    {
+      "prompt": "Which OAuth grant works for the v2 API?",
+      "expect": [
+        "client credentials",
+        "token URL login.churchsuite.com",
+        "scope full_access or module read"
+      ]
+    },
+    {
+      "prompt": "I'm in Australia. How do Gift Aid claims work?",
+      "expect": [
+        "Gift Aid is UK only",
+        "mention Australian equivalents briefly",
+        "suggest accountant"
+      ]
+    },
+    {
+      "prompt": "What is the Forget me button for?",
+      "expect": [
+        "notifies data protection contact",
+        "key date added",
+        "nothing auto deleted",
+        "needs privacy statement uploaded"
+      ]
+    },
+    {
+      "prompt": "How do I make a list of people with DBS expiring soon?",
+      "expect": [
+        "key date for expiry",
+        "smart tag recipe",
+        "within next 60 days"
+      ]
+    },
+    {
+      "prompt": "Help me set up a newcomer follow up.",
+      "expect": [
+        "flow with stages",
+        "newcomer form feeds flow",
+        "only Active processed"
+      ]
+    },
+    {
+      "prompt": "Our rota reminder email is wrong.",
+      "expect": [
+        "rota level reminders",
+        "::roles:: and ::serving_date::",
+        "check preset"
+      ]
+    },
+    {
+      "prompt": "Can I paste a spreadsheet of 500 members here to clean?",
+      "expect": [
+        "avoid sharing full personal data",
+        "anonymised sample rows",
+        "use scripts/csv_preimport_check.py locally"
+      ]
+    },
+    {
+      "prompt": "Write a monthly health check for our account.",
+      "expect": [
+        "use account health audit",
+        "users, people data, children, giving, data protection",
+        "owners and dates"
+      ]
+    },
+    {
+      "prompt": "I'm a small group leader. What can I do?",
+      "expect": [
+        "My ChurchSuite",
+        "attendance",
+        "email members",
+        "no admin jargon"
+      ]
+    },
+    {
+      "prompt": "What is CharitySuite?",
+      "expect": [
+        "sister product",
+        "different login domain",
+        "same API pattern, verify"
+      ]
+    },
+    {
+      "prompt": "What is the ChurchSuite API rate limit?",
+      "expect": [
+        "120 requests per 60 seconds per account",
+        "429 with Retry-After header",
+        "back off and cache"
+      ]
+    }
+  ]
+}

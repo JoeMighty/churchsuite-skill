@@ -8,7 +8,6 @@ Every module, administration, data protection, importing and exporting, plus the
 
 [![Licence](https://img.shields.io/github/license/JoeMighty/churchsuite-skill?style=plastic&label=licence&color=blue)](LICENSE)
 [![Checks](https://img.shields.io/github/actions/workflow/status/JoeMighty/churchsuite-skill/checks.yml?style=plastic&label=checks)](../../actions/workflows/checks.yml)
-[![Links](https://img.shields.io/github/actions/workflow/status/JoeMighty/churchsuite-skill/link-check.yml?style=plastic&label=links)](../../actions/workflows/link-check.yml)
 [![Python](https://img.shields.io/badge/python-standard%20library%20only-3776AB?style=plastic&logo=python&logoColor=white)](churchsuite/scripts)
 [![References](https://img.shields.io/badge/references-24%20files-success?style=plastic)](churchsuite/references)
 [![Last commit](https://img.shields.io/github/last-commit/JoeMighty/churchsuite-skill?style=plastic)](../../commits)

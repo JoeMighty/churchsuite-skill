@@ -76,3 +76,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Corrections with a source link are very 
 ## Licence
 
 MIT, see [LICENSE](LICENSE).
+
+## Topics
+
+Terms this skill is indexed under, matching the repository topics:
+
+`churchsuite` `church-management` `church-management-software` `chms` `church`
+`nonprofit` `charity` `ministry` `gift-aid` `gdpr` `api-client` `python` `uk`
+`reference-documentation` `agent-skills` `ai-agent` `claude-code` `claude-skill`

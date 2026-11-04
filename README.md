@@ -81,6 +81,8 @@ MIT, see [LICENSE](LICENSE).
 
 Terms this skill is indexed under, matching the repository topics:
 
-`churchsuite` `church-management` `church-management-software` `chms` `church`
-`nonprofit` `charity` `ministry` `gift-aid` `gdpr` `api-client` `python` `uk`
-`reference-documentation` `agent-skills` `ai-agent` `claude-code` `claude-skill`
+`agent-skills` `ai-agent` `ai-agent-skill` `ai-agent-skills` `charity` `chms`
+`church` `church-management` `church-management-system` `churchsuite`
+`claude-code` `claude-code-skill` `claude-code-skills` `claude-skill`
+`claude-skills` `gift-aid` `ministry` `nonprofit` `python`
+`reference-documentation`

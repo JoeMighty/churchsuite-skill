@@ -1,0 +1,7 @@
+# Normalise all text files to LF in the repository and in the working copy.
+* text=auto eol=lf
+
+# Keep binary-ish assets out of line ending conversion.
+*.png binary
+*.jpg binary
+*.zip binary
